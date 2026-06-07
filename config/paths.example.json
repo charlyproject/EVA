@@ -1,0 +1,351 @@
+{
+  "note": "Configuration file for EVA - Example template. Copy to paths.json and fill in your values.",
+  "version": "2.0",
+  "default_language": "es",
+  "first_run": true,
+  "ollama_acceleration": "cpu",
+  "comandos_especiales": {
+    "captura": ["captura pantalla", "toma captura", "screenshot", "take screenshot", "capture screen"],
+    "cierre": ["salir", "exit"],
+    "windows_control": {
+      "volume_specific": ["volumen", "volume"],
+      "wifi": ["wifi"],
+      "brightness": ["brillo", "brightness"],
+      "bluetooth": ["bluetooth"]
+    }
+  },
+  "confirm": ["apaga", "reinicia", "cierra sesión", "shutdown", "restart", "logout"],
+  "variants": {
+    "chrome": ["chrome", "navegador", "crome", "chrom"],
+    "google": ["google", "guguel", "gugle", "gogel"]
+  },
+  "colors": {
+    "listening": [100, 255, 150, 220],
+    "responding": [200, 100, 255, 220],
+    "idle": [100, 200, 255, 180],
+    "stealth": [80, 80, 80, 100],
+    "alert": [255, 50, 50, 220],
+    "conversation": [255, 150, 50, 220]
+  },
+  "ollama": {
+    "model": "phi3:mini",
+    "timeout": 30,
+    "fallback_model": "qwen3:4b",
+    "use_eva_ollama": true,
+    "eva_executable": "ollama/ollama_eva.exe",
+    "models_directory": null,
+    "base_url": "http://localhost:11434"
+  },
+  "tts": {
+    "cuda": true,
+    "volume": 0.67,
+    "voice_id": "helena",
+    "voice_model": "en_US-kristin-medium",
+    "enhanced_mode": true,
+    "engine": "piper",
+    "speed": 0.97,
+    "piper_language": "es",
+    "english_voice": "en_US-kristin-medium",
+    "use_windows_voices": false,
+    "spanish_voice": "es_MX-claude-high",
+    "fast_voice": "piper",
+    "natural_voice": "piper",
+    "use_piper": true,
+    "use_melo": false,
+    "melo_config": {
+      "enabled": false,
+      "speaker_id": 0,
+      "speed": 1.0,
+      "pitch": 0.0,
+      "energy": 1.0,
+      "emotion": "neutral",
+      "sample_rate": 44100,
+      "optimize_memory": true,
+      "streaming": false,
+      "noise_scale": 0.667,
+      "noise_scale_w": 0.8,
+      "length_scale": 1.0
+    },
+    "voice_variant": "es",
+    "language": "en",
+    "apply_spanish_filter": false,
+    "use_coqui": false
+  },
+  "activation_words": {
+    "conversation": ["modo chat", "habla"]
+  },
+  "volume_threshold": 0.3,
+  "inactivity_timeout": 30,
+  "stealth_mode": false,
+  "system_info": {
+    "auto_detection": true,
+    "min_ram_gb": 4,
+    "ollama_gpu_auto": true,
+    "piper_tts_cpu_only": true
+  },
+  "license_key": "",
+  "ssl_verification": true,
+  "auto_start": false,
+  "minimize_start": false,
+  "auto_listen": true,
+  "sensitivity": 1.0,
+  "license_valid": false,
+  "license_type": "FREE",
+  "font_size": 12,
+  "position": [655, 14],
+  "size": [400, 490],
+  "window_position": [563, 92],
+  "window_size": [750, 497],
+  "custom_programs": {
+    "notepad": {
+      "name": "Notepad",
+      "path": "C:\\Windows\\System32\\notepad.exe",
+      "keywords": ["notepad", "bloc de notas"]
+    }
+  },
+  "custom_folders": {
+    "documentos": {
+      "name": "Documentos",
+      "path": "%USERPROFILE%\\Documents",
+      "keywords": ["documentos", "documents"]
+    }
+  },
+  "custom_websites": {
+    "youtube": {
+      "name": "YouTube",
+      "url": "https://www.youtube.com",
+      "keywords": ["youtube", "videos"]
+    }
+  },
+  "custom_hotkeys": [
+    {
+      "name": "Activar EVA",
+      "combination": "ctrl+alt+e",
+      "action": "activate_eva"
+    }
+  ],
+  "managed_paths": {
+    "program_chrome": {
+      "path_type": "program",
+      "relative_path": "chrome.exe",
+      "fallback_paths": [
+        "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+      ],
+      "platform_specific": {
+        "windows": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "linux": "/usr/bin/google-chrome",
+        "darwin": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+      },
+      "validate_exists": false,
+      "description": "Google Chrome browser"
+    },
+    "program_vlc": {
+      "path_type": "program",
+      "relative_path": "vlc.exe",
+      "fallback_paths": [
+        "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe",
+        "C:\\Program Files (x86)\\VideoLAN\\VLC\\vlc.exe"
+      ],
+      "platform_specific": {
+        "windows": "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe",
+        "linux": "/usr/bin/vlc",
+        "darwin": "/Applications/VLC.app/Contents/MacOS/VLC"
+      },
+      "validate_exists": false,
+      "description": "VLC Media Player"
+    },
+    "program_ollama": {
+      "path_type": "program",
+      "relative_path": "ollama.exe",
+      "fallback_paths": [
+        "C:\\Program Files\\Ollama\\ollama.exe",
+        "%USERPROFILE%\\AppData\\Local\\Programs\\Ollama\\ollama.exe",
+        "C:\\ProgramData\\chocolatey\\bin\\ollama.exe"
+      ],
+      "platform_specific": {
+        "windows": "C:\\Program Files\\Ollama\\ollama.exe",
+        "linux": "/usr/bin/ollama",
+        "darwin": "/usr/local/bin/ollama"
+      },
+      "validate_exists": true,
+      "description": "Ollama local LLM executable"
+    },
+    "ffmpeg_bin": {
+      "path_type": "program",
+      "relative_path": "ffmpeg/bin/ffmpeg.exe",
+      "fallback_paths": [
+        "./ffmpeg/bin",
+        "C:\\ffmpeg\\bin",
+        "D:\\ffmpeg\\bin",
+        "_internal/ffmpeg/bin"
+      ],
+      "platform_specific": {
+        "windows": "ffmpeg/bin/ffmpeg.exe",
+        "linux": "ffmpeg/bin/ffmpeg",
+        "darwin": "ffmpeg/bin/ffmpeg"
+      },
+      "validate_exists": false,
+      "description": "FFmpeg executable"
+    },
+    "vosk_models": {
+      "path_type": "model",
+      "relative_path": "models/vosk",
+      "fallback_paths": [
+        "%USERPROFILE%\\AppData\\Local\\EVA\\models\\vosk",
+        "C:\\vosk",
+        "D:\\vosk",
+        "./vosk",
+        "_internal/vosk"
+      ],
+      "create_if_missing": false,
+      "description": "Vosk speech recognition models directory"
+    },
+    "tts_voices": {
+      "path_type": "voice",
+      "relative_path": "piper/espeak-ng-data/voices",
+      "fallback_paths": ["./piper/espeak-ng-data/voices", "_internal/piper/espeak-ng-data/voices"],
+      "create_if_missing": false,
+      "description": "Piper TTS voice models directory"
+    },
+    "user_downloads": {
+      "path_type": "user_folder",
+      "relative_path": "Downloads",
+      "platform_specific": {
+        "windows": "%USERPROFILE%\\Downloads",
+        "linux": "~/Downloads",
+        "darwin": "~/Downloads"
+      },
+      "description": "User downloads folder"
+    },
+    "user_documents": {
+      "path_type": "user_folder",
+      "relative_path": "Documents",
+      "platform_specific": {
+        "windows": "%USERPROFILE%\\Documents",
+        "linux": "~/Documents",
+        "darwin": "~/Documents"
+      },
+      "description": "User documents folder"
+    },
+    "websites": {
+      "google": "https://www.google.com",
+      "github": "https://github.com",
+      "youtube": "https://www.youtube.com",
+      "twitch": "https://www.twitch.tv"
+    },
+    "hotkeys": [
+      {"key": "ctrl+alt+e", "action_type": "basic", "target": "activar"},
+      {"key": "ctrl+alt+c", "action_type": "basic", "target": "mostrar_chat"},
+      {"key": "ctrl+alt+h", "action_type": "basic", "target": "ocultar_chat"},
+      {"key": "ctrl+alt+q", "action_type": "basic", "target": "salir"}
+    ]
+  },
+  "hotkeys": {
+    "activar": "ctrl+alt+e",
+    "mostrar_chat": "ctrl+alt+c",
+    "ocultar_chat": "ctrl+alt+h",
+    "salir": "ctrl+alt+q",
+    "custom": []
+  },
+  "language": "es",
+  "general_settings": "General Settings",
+  "voice_settings": "Voice Settings",
+  "settings": "Settings",
+  "user_name": "",
+  "updates": {
+    "check_automatically": false,
+    "check_interval_hours": 6,
+    "notify_critical_only": false,
+    "create_backups": true,
+    "skipped_versions": [],
+    "last_check": null,
+    "remind_later_until": null
+  },
+  "gumroad": {
+    "product_url": "https://gumroad.com/l/eva-assistant",
+    "api_key": ""
+  },
+  "memory": {
+    "auto_unload_min": 15,
+    "enable_auto_detect": true,
+    "emergency_threshold_mb": 500,
+    "monitoring_interval": 30,
+    "vram_warning_threshold": 85
+  },
+  "high_perf_apps": [
+    "javaw.exe", "davinci.exe", "blender.exe", "Unity.exe", "UnrealEditor.exe",
+    "obs64.exe", "chrome.exe", "firefox.exe", "steam.exe", "steamwebhelper.exe",
+    "GameOverlayUI.exe", "Discord.exe", "Photoshop.exe", "AfterFX.exe", "PremierePro.exe"
+  ],
+  "tts_management": {
+    "enabled": true,
+    "preload_delay_seconds": 600,
+    "unload_delay_seconds": 900,
+    "cpu_idle_threshold": 10,
+    "ram_idle_threshold_mb": 50,
+    "monitoring_interval_seconds": 30
+  },
+  "shortcuts": {
+    "trabajo": {
+      "name": "Modo Trabajo",
+      "commands": ["abre chrome", "abre documentos", "modelo qwen3:4b"]
+    }
+  },
+  "user_preferences": {
+    "contextual_greetings": true,
+    "auto_suggestions": true,
+    "timezone": "UTC",
+    "work_hours": {"start": "09:00", "end": "18:00"}
+  },
+  "command_history": [],
+  "frequent_commands": {},
+  "custom_responses": {},
+  "voice_training": {"enabled": false, "samples": []},
+  "frases_transicion": ["Procesando...", "Un momento..."],
+  "respuestas_error": ["No entendí el comando", "Intenta de nuevo"],
+  "paths": {
+    "programs": {},
+    "folders": {},
+    "websites": {
+      "google": "https://www.google.com",
+      "youtube": "https://www.youtube.com",
+      "twitch": "https://www.twitch.tv"
+    },
+    "hotkeys": [
+      {"key": "ctrl+alt+e", "action_type": "basic", "target": "activar"},
+      {"key": "ctrl+alt+c", "action_type": "basic", "target": "mostrar_chat"},
+      {"key": "ctrl+alt+h", "action_type": "basic", "target": "ocultar_chat"},
+      {"key": "ctrl+alt+q", "action_type": "basic", "target": "salir"},
+      {"key": "ctrl+alt+v", "action_type": "vram", "target": "liberar_vram"},
+      {"key": "ctrl+alt+p", "action_type": "vram", "target": "modo_rendimiento"}
+    ]
+  },
+  "hardware_settings": "Hardware Settings",
+  "vad": {
+    "enabled": true,
+    "mode": 1,
+    "description": {
+      "0": "Muy Conservador - Solo voz muy clara (oficinas muy ruidosas)",
+      "1": "Conservador - Voz normal, ignora susurros (oficinas ruidosas)",
+      "2": "Equilibrado - Recomendado para la mayoría de usuarios",
+      "3": "Sensible - Detecta susurros (ambientes silenciosos)"
+    },
+    "frame_duration": 10,
+    "padding_duration": 100
+  },
+  "plugins": {
+    "tavily_api_key": "",
+    "tavily_search_depth": "basic",
+    "tavily_max_results": 3
+  },
+  "hardware_type": "cpu",
+  "user_avatar": "default_avatar.png",
+  "ai_provider": "openrouter",
+  "openrouter": {
+    "api_key": "",
+    "model": "openrouter/free"
+  },
+  "use_mini_mode": true,
+  "mini_bar_position": []
+}

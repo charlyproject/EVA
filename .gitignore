@@ -1,0 +1,84 @@
+# ============================================================
+# EVA - Enhanced Voice Assistant
+# .gitignore para Python + PySide6 + Windows
+# ============================================================
+
+# ── Entornos virtuales ─────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# ── Python cache y compilados ──────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+
+# ── Herramientas de desarrollo / IDE ──────────────────────
+.idea/
+.vscode/
+.compass/
+.junie/
+.opencode/
+*.swp
+*.swo
+.DS_Store
+
+# ── Artefactos de build (PyInstaller) ─────────────────────
+build/
+build_uninstall/
+dist/
+_internal/
+*.spec.backup
+*.bak
+*.bak_think
+installer/
+
+# ── Logs ──────────────────────────────────────────────────
+logs/
+*.log
+eva_errors.log
+
+# ── Caché en tiempo de ejecución ──────────────────────────
+cache/
+
+# ── Backups generados por la app ──────────────────────────
+backups/
+
+# ── Archivos comprimidos (no pertenecen al repo) ──────────
+*.rar
+*.zip
+*.7z
+*.tar.gz
+*.bz2
+
+# ── Binarios y modelos pesados (descarga separada) ────────
+# Ver: download_models.bat y requirements_extra.md
+piper/
+ffmpeg/
+models/
+voice/models/
+
+# ── Config con datos locales (generados en runtime) ───────
+config/hardware_cache.json
+config/session.dat
+config/install_config.json.bak
+config/update_state.json
+config/paths.json
+eva_knowledge_base.json
+config/eva_knowledge_base.json
+
+# ── Archivos Windows ───────────────────────────────────────
+Desktop.ini
+Thumbs.db
+ehthumbs.db
+
+# ── Archivos internos / análisis de desarrollo ────────────
+ANALISIS_MERCADO_EVA_v1.0.md
+INFORME_AUDITORIA_EVA.md
+generar_backup_solo_app.py
+restaurar_solo_eva.py

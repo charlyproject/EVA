@@ -1,0 +1,261 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "title": "Manual Interactivo de EVA",
+    "description": "Sistema de ayuda guiada para EVA - Asistente Virtual Mejorado",
+    "languages": ["es", "en"],
+    "last_updated": "2025-01-15",
+    "total_nodes": 25
+  },
+  "root": {
+    "id": "main",
+    "title": {
+      "es": "🏠 Manual de EVA - Menú Principal",
+      "en": "🏠 EVA Manual - Main Menu"
+    },
+    "description": {
+      "es": "Bienvenido al sistema de ayuda interactivo de EVA. Selecciona una categoría escribiendo el número correspondiente:",
+      "en": "Welcome to EVA's interactive help system. Select a category by typing the corresponding number:"
+    },
+    "children": [
+      {
+        "id": "basic_commands",
+        "title": {
+          "es": "1. 🎯 Comandos Básicos",
+          "en": "1. 🎯 Basic Commands"
+        },
+        "description": {
+          "es": "Aprende los comandos fundamentales de EVA",
+          "en": "Learn EVA's fundamental commands"
+        },
+        "children": [
+          {
+            "id": "file_operations",
+            "title": {
+              "es": "1.1 📁 Gestión de Archivos",
+              "en": "1.1 📁 File Management"
+            },
+            "content": {
+              "es": "EVA puede abrir archivos de forma inteligente:\n\n🔢 Por posición:\n• 'abre archivo 1' - Abre el primer archivo\n• 'abre archivo 5' - Abre el quinto archivo\n\n📝 Por nombre:\n• 'abre documento importante'\n• 'abre presentación'\n• 'abre lo que el viento se'\n\n⚙️ Configurar orden:\n• 'orden de archivos' - Configura ordenamiento\n• '1' - Por nombre alfabético\n• '2' - Por fecha de creación\n• '3' - Por fecha de modificación",
+              "en": "EVA can open files intelligently:\n\n🔢 By position:\n• 'open file 1' - Opens first file\n• 'open file 5' - Opens fifth file\n\n📝 By name:\n• 'open important document'\n• 'open presentation'\n• 'open gone with the wind'\n\n⚙️ Configure order:\n• 'file order' - Configure sorting\n• '1' - By alphabetical name\n• '2' - By creation date\n• '3' - By modification date"
+            },
+            "examples": {
+              "es": ["abre archivo 1", "orden de archivos", "abre presentación"],
+              "en": ["open file 1", "file order", "open presentation"]
+            }
+          },
+          {
+            "id": "voice_activation",
+            "title": {
+              "es": "1.2 🎤 Activación por Voz",
+              "en": "1.2 🎤 Voice Activation"
+            },
+            "content": {
+              "es": "Controla EVA con tu voz:\n\n🔑 Tecla de activación: Ctrl+Alt+E\n\n🗣️ Comandos de voz:\n• Habla claramente después de activar\n• EVA responde en español e inglés\n• Usa 'EVA' al inicio para comandos específicos\n\n🔧 Configuración:\n• 'configuración de voz' - Ajustar micrófono\n• 'probar voz' - Verificar funcionamiento\n• 'silenciar voz' - Desactivar respuestas",
+              "en": "Control EVA with your voice:\n\n🔑 Activation key: Ctrl+Alt+E\n\n🗣️ Voice commands:\n• Speak clearly after activation\n• EVA responds in Spanish and English\n• Use 'EVA' at the beginning for specific commands\n\n🔧 Configuration:\n• 'voice settings' - Adjust microphone\n• 'test voice' - Verify functionality\n• 'mute voice' - Disable responses"
+            }
+          }
+        ]
+      },
+      {
+        "id": "system_control",
+        "title": {
+          "es": "2. 🖥️ Control del Sistema",
+          "en": "2. 🖥️ System Control"
+        },
+        "children": [
+          {
+            "id": "power_management",
+            "title": {
+              "es": "2.1 ⚡ Gestión de Energía",
+              "en": "2.1 ⚡ Power Management"
+            },
+            "content": {
+              "es": "Controla el estado de tu computadora:\n\n🔴 Apagar:\n• 'apagar computadora'\n• 'shutdown computer'\n\n🔄 Reiniciar:\n• 'reiniciar computadora'\n• 'restart computer'\n\n😴 Suspender:\n• 'suspender computadora'\n• 'sleep computer'\n\n🔒 Bloquear:\n• 'bloquear computadora'\n• 'lock computer'",
+              "en": "Control your computer's state:\n\n🔴 Shutdown:\n• 'shutdown computer'\n• 'apagar computadora'\n\n🔄 Restart:\n• 'restart computer'\n• 'reiniciar computadora'\n\n😴 Sleep:\n• 'sleep computer'\n• 'suspender computadora'\n\n🔒 Lock:\n• 'lock computer'\n• 'bloquear computadora'"
+            }
+          },
+          {
+            "id": "audio_control",
+            "title": {
+              "es": "2.2 🔊 Control de Audio",
+              "en": "2.2 🔊 Audio Control"
+            },
+            "content": {
+              "es": "Controla el audio del sistema:\n\n🔊 Volumen:\n• 'subir volumen' / 'volume up'\n• 'bajar volumen' / 'volume down'\n• 'silenciar' / 'mute'\n\n🎵 Multimedia:\n• 'siguiente pista' / 'next track'\n• 'pausar VLC' / 'pause VLC'\n• 'pantalla completa MPC'\n• 'subir volumen Kodi'",
+              "en": "Control system audio:\n\n🔊 Volume:\n• 'volume up' / 'subir volumen'\n• 'volume down' / 'bajar volumen'\n• 'mute' / 'silenciar'\n\n🎵 Multimedia:\n• 'next track' / 'siguiente pista'\n• 'pause VLC' / 'pausar VLC'\n• 'fullscreen MPC'\n• 'Kodi volume up'"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ai_features",
+        "title": {
+          "es": "3. 🤖 Funciones de IA",
+          "en": "3. 🤖 AI Features"
+        },
+        "children": [
+          {
+            "id": "conversation",
+            "title": {
+              "es": "3.1 💬 Conversación con IA",
+              "en": "3.1 💬 AI Conversation"
+            },
+            "content": {
+              "es": "Habla con EVA usando IA local:\n\n🧠 Modelos disponibles:\n• 'modelo' - Ver modelos disponibles\n• '1', '2', '3' - Seleccionar modelo\n• 'usa modelo 2' - Cambiar modelo\n\n💭 Conversación:\n• Pregunta cualquier cosa a EVA\n• Mantiene contexto de conversación\n• Funciona 100% offline\n• Memoria contextual inteligente",
+              "en": "Talk to EVA using local AI:\n\n🧠 Available models:\n• 'model' - View available models\n• '1', '2', '3' - Select model\n• 'use model 2' - Change model\n\n💭 Conversation:\n• Ask EVA anything\n• Maintains conversation context\n• Works 100% offline\n• Intelligent contextual memory"
+            }
+          }
+        ]
+      },
+      {
+        "id": "appointments",
+        "title": {
+          "es": "4. 📅 Sistema de Citas",
+          "en": "4. 📅 Appointment System"
+        },
+        "content": {
+          "es": "Sistema conversacional ultra-simple:\n\n🎯 Proceso guiado:\n1. Di 'cita' / 'appointment'\n2. EVA pregunta el tema\n3. EVA pregunta la fecha\n4. EVA pregunta la hora\n5. ¡Cita creada!\n\n⚡ Comandos directos:\n• 'cita médico viernes 12:30'\n• 'citas' - Ver citas de hoy\n• 'citas mañana' - Ver citas de mañana\n• 'citas cancelar' - Cancelar citas\n\n📅 Formatos soportados:\n• Fechas: hoy, mañana, viernes, 22/02\n• Horas: 12:30, 09:15 (formato 24h)",
+          "en": "Ultra-simple conversational system:\n\n🎯 Guided process:\n1. Say 'appointment' / 'cita'\n2. EVA asks for the subject\n3. EVA asks for the date\n4. EVA asks for the time\n5. Appointment created!\n\n⚡ Direct commands:\n• 'appointment doctor friday 12:30'\n• 'appointments' - View today's appointments\n• 'appointments tomorrow' - View tomorrow's\n• 'appointments cancel' - Cancel appointments\n\n📅 Supported formats:\n• Dates: today, tomorrow, friday, 22/02\n• Times: 12:30, 09:15 (24h format)"
+        }
+      },
+      {
+        "id": "advanced_features",
+        "title": {
+          "es": "5. ⚙️ Funciones Avanzadas",
+          "en": "5. ⚙️ Advanced Features"
+        },
+        "children": [
+          {
+            "id": "vram_management",
+            "title": {
+              "es": "5.1 🧠 Sistema Inteligente de Ollama",
+              "en": "5.1 🧠 Intelligent Ollama System"
+            },
+            "content": {
+              "es": "🤖 Gestión 100% Automática - No necesitas comandos manuales:\n\n✅ FUNCIONA AUTOMÁTICAMENTE:\n• Carga modelos cuando los necesitas\n• Descarga por inactividad (12 min)\n• Detecta apps pesadas (juegos, Blender)\n• VRAM a 0% en reposo\n• Notificaciones discretas\n\n🚨 Comandos de emergencia (raramente necesarios):\n• 'EVA, forzar descarga' - Descarga inmediata\n• 'EVA, reiniciar ollama' - Reinicio completo\n• 'EVA, estado ollama' - Diagnóstico\n\n💡 El sistema se gestiona solo - experiencia transparente.",
+              "en": "🤖 100% Automatic Management - No manual commands needed:\n\n✅ WORKS AUTOMATICALLY:\n• Loads models when you need them\n• Unloads after inactivity (12 min)\n• Detects heavy apps (games, Blender)\n• VRAM at 0% when idle\n• Discrete notifications\n\n🚨 Emergency commands (rarely needed):\n• 'EVA, force unload' - Immediate unload\n• 'EVA, restart ollama' - Complete restart\n• 'EVA, ollama status' - Diagnostic\n\n💡 System manages itself - transparent experience."
+            }
+          },
+          {
+            "id": "contextual_memory",
+            "title": {
+              "es": "5.2 🧠 Memoria Contextual",
+              "en": "5.2 🧠 Contextual Memory"
+            },
+            "content": {
+              "es": "EVA recuerda el contexto de la conversación:\n\n🔗 Referencias contextuales:\n• 'el anterior' - Refiere al comando previo\n• 'esa carpeta' - Refiere a carpeta mencionada\n• 'el segundo archivo' - Refiere a lista previa\n\n📚 Aprendizaje de patrones:\n• Detecta rutinas del usuario\n• Sugiere automatizaciones\n• Aprende preferencias\n• 100% privacidad offline",
+              "en": "EVA remembers conversation context:\n\n🔗 Contextual references:\n• 'the previous one' - Refers to previous command\n• 'that folder' - Refers to mentioned folder\n• 'the second file' - Refers to previous list\n\n📚 Pattern learning:\n• Detects user routines\n• Suggests automations\n• Learns preferences\n• 100% offline privacy"
+            }
+          }
+        ]
+      },
+      {
+        "id": "configuration",
+        "title": {
+          "es": "6. 🔧 Configuración",
+          "en": "6. 🔧 Configuration"
+        },
+        "children": [
+          {
+            "id": "appearance",
+            "title": {
+              "es": "6.1 🎨 Apariencia",
+              "en": "6.1 🎨 Appearance"
+            },
+            "content": {
+              "es": "Personaliza la interfaz de EVA:\n\n🌓 Temas:\n• Tema oscuro (predeterminado)\n• Tema claro\n• Temas personalizados\n\n🔤 Fuentes:\n• Selección de familia de fuente\n• Tamaño (8-72pt)\n• Negrita/cursiva\n\n🪟 Ventana:\n• Siempre encima\n• Posición de inicio\n• Opacidad",
+              "en": "Customize EVA's interface:\n\n🌓 Themes:\n• Dark theme (default)\n• Light theme\n• Custom themes\n\n🔤 Fonts:\n• Font family selection\n• Size (8-72pt)\n• Bold/italic\n\n🪟 Window:\n• Always on top\n• Startup position\n• Opacity"
+            }
+          },
+          {
+            "id": "voice_settings",
+            "title": {
+              "es": "6.2 🎤 Configuración de Voz",
+              "en": "6.2 🎤 Voice Settings"
+            },
+            "content": {
+              "es": "Ajusta el sistema de voz:\n\n🎙️ Reconocimiento:\n• Idioma (Español/Inglés)\n• Sensibilidad del micrófono\n• Umbral de ruido\n• Escucha continua\n\n🗣️ Síntesis de voz:\n• Selección de voz por idioma\n• Velocidad de habla\n• Volumen\n• Vista previa de voz",
+              "en": "Adjust voice system:\n\n🎙️ Recognition:\n• Language (Spanish/English)\n• Microphone sensitivity\n• Noise threshold\n• Continuous listening\n\n🗣️ Text-to-speech:\n• Voice selection per language\n• Speech rate\n• Volume\n• Voice preview"
+            }
+          }
+        ]
+      },
+      {
+        "id": "troubleshooting",
+        "title": {
+          "es": "7. 🆘 Solución de Problemas",
+          "en": "7. 🆘 Troubleshooting"
+        },
+        "content": {
+          "es": "Soluciones a problemas comunes:\n\n🎤 Voz no funciona:\n• Verificar permisos del micrófono\n• Ajustar sensibilidad en configuración\n• Verificar modelo Vosk instalado\n\n🎮 GPU no detectada:\n• Instalar controladores NVIDIA\n• Verificar instalación CUDA\n• Revisar compatibilidad GPU\n\n📄 Archivos de registro:\n• Registro principal: Salida de consola\n• Registro de errores: logs/error.log\n• Registro de rendimiento: logs/performance.log",
+          "en": "Solutions to common problems:\n\n🎤 Voice not working:\n• Check microphone permissions\n• Adjust sensitivity in settings\n• Verify Vosk model installed\n\n🎮 GPU not detected:\n• Install NVIDIA drivers\n• Verify CUDA installation\n• Check GPU compatibility\n\n📄 Log files:\n• Main log: Console output\n• Error log: logs/error.log\n• Performance log: logs/performance.log"
+        }
+      }
+    ]
+  },
+  "search_index": {
+    "keywords": {
+      "archivo": ["file_operations"],
+      "voz": ["voice_activation", "voice_settings"],
+      "cita": ["appointments"],
+      "vram": ["vram_management"],
+      "volumen": ["audio_control"],
+      "ventana": ["window_management"],
+      "modelo": ["conversation"],
+      "configuración": ["configuration"],
+      "apariencia": ["appearance"],
+      "tema": ["appearance"],
+      "problema": ["troubleshooting"],
+      "error": ["troubleshooting"],
+      "gpu": ["vram_management"],
+      "memoria": ["contextual_memory", "vram_management"],
+      "audio": ["audio_control"],
+      "sistema": ["system_control"],
+      "energia": ["power_management"],
+      "apagar": ["power_management"],
+      "reiniciar": ["power_management"],
+      "bloquear": ["power_management"],
+      "ia": ["ai_features", "conversation"],
+      "inteligencia": ["ai_features"],
+      "conversacion": ["conversation"],
+      "documento": ["document_processing"],
+      "file": ["file_operations"],
+      "voice": ["voice_activation", "voice_settings"],
+      "appointment": ["appointments"],
+      "volume": ["audio_control"],
+      "window": ["window_management"],
+      "model": ["conversation"],
+      "settings": ["configuration"],
+      "appearance": ["appearance"],
+      "theme": ["appearance"],
+      "problem": ["troubleshooting"],
+      "error": ["troubleshooting"],
+      "memory": ["contextual_memory", "vram_management"],
+      "system": ["system_control"],
+      "power": ["power_management"],
+      "shutdown": ["power_management"],
+      "restart": ["power_management"],
+      "lock": ["power_management"],
+      "ai": ["ai_features", "conversation"],
+      "conversation": ["conversation"],
+      "document": ["document_processing"]
+    }
+  },
+  "navigation": {
+    "commands": {
+      "es": {
+        "back": ["atrás", "volver", "anterior"],
+        "home": ["inicio", "principal", "menú", "menu"],
+        "exit": ["salir"],
+        "search": ["busca"]
+      },
+      "en": {
+        "back": ["back", "return", "previous"],
+        "home": ["home", "main", "menu"],
+        "exit": ["exit"],
+        "search": ["search"]
+      }
+    }
+  }
+}

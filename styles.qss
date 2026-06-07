@@ -1,0 +1,269 @@
+/* Estilos generales premium */
+* {
+    font-family: 'Segoe UI', 'Open Sans', sans-serif;
+    color: #e0f7fa;
+}
+
+QWidget {
+    background-color: transparent;
+}
+
+QPushButton {
+    min-height: 30px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+QPushButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+QPushButton:pressed {
+    background-color: rgba(0, 188, 212, 0.25);
+}
+
+QLineEdit, QTextEdit {
+    background-color: rgba(30, 30, 40, 0.7);
+    border: 1px solid rgba(77, 182, 172, 0.3);
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+QLineEdit:focus, QTextEdit:focus {
+    border: 1px solid #00bcd4;
+}
+
+QLineEdit:disabled {
+    background-color: rgba(30, 30, 40, 0.3);
+    color: rgba(224, 247, 250, 0.4);
+}
+
+#titleBar {
+    background-color: rgba(20, 25, 40, 0.95);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 5px 10px;
+}
+
+#mainFrame {
+    background-color: rgba(18, 18, 30, 0.92);
+    border-radius: 12px;
+    border: 1px solid rgba(77, 182, 172, 0.5); /* Borde más visible */
+}
+
+#chatHistory {
+    background-color: rgba(25, 25, 35, 0.6);
+    border-radius: 8px;
+    padding: 15px;
+}
+
+#statusBar {
+    background-color: rgba(20, 25, 40, 0.8);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 8px 15px;
+    font-size: 12px;
+}
+
+QComboBox {
+    min-height: 28px;
+    padding: 4px;
+    background-color: rgba(30, 30, 40, 0.7);
+    border: 1px solid rgba(77, 182, 172, 0.3);
+    border-radius: 4px;
+}
+
+QComboBox::drop-down {
+    border: none;
+}
+
+QComboBox QAbstractItemView {
+    background-color: rgba(30, 30, 40, 0.9);
+    border: 1px solid rgba(77, 182, 172, 0.3);
+    selection-background-color: rgba(0, 188, 212, 0.3);
+}
+
+/* Scrollbars */
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: transparent;
+    width: 10px;
+    height: 10px;
+    margin: 2px;
+}
+
+QScrollBar::handle {
+    background: rgba(0, 188, 212, 0.4);
+    border-radius: 5px;
+}
+
+QScrollBar::handle:hover {
+    background: rgba(0, 188, 212, 0.6);
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+    background: none;
+    border: none;
+    height: 0;
+    width: 0;
+}
+
+/* ToolTip personalizado */
+QToolTip {
+    background-color: rgba(30, 30, 40, 0.95);
+    color: #e0f7fa;
+    border: 1px solid #00bcd4;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+/* Ventana de configuración premium */
+QDialog {
+    background-color: rgba(25, 25, 35, 0.95);
+    font-family: 'Segoe UI', 'Open Sans', sans-serif;
+    border: 2px solid #4db6ac; /* Borde más visible */
+    border-radius: 12px;
+}
+
+QGroupBox {
+    font-weight: 600;
+    font-size: 14px;
+    color: #bb86fc;
+    border: 1px solid rgba(77, 182, 172, 0.5); /* Borde más visible */
+    border-radius: 8px;
+    margin-top: 16px;
+    padding-top: 20px;
+    background-color: rgba(30, 30, 40, 0.6);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 8px;
+    background-color: transparent;
+}
+
+QLabel {
+    color: #e0f7fa;
+    font-size: 13px;
+}
+
+QCheckBox {
+    color: #e0f7fa;
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 1px solid rgba(77, 182, 172, 0.5);
+    background-color: rgba(30, 30, 40, 0.7);
+}
+
+QCheckBox::indicator:checked {
+    background-color: #00bcd4;
+    border: 1px solid #ffffff;
+}
+
+QSlider::groove:horizontal {
+    height: 8px;
+    background: rgba(77, 182, 172, 0.2);
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+    background: #00bcd4;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 18px;
+    height: 18px;
+    margin: -5px 0;
+    border-radius: 9px;
+}
+
+QSlider::sub-page:horizontal {
+    background: #00bcd4;
+    border-radius: 4px;
+}
+
+/* Pestañas (si se usan) */
+QTabBar::tab {
+    background: rgba(30, 30, 40, 0.6);
+    border: 1px solid rgba(77, 182, 172, 0.3);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 6px 12px;
+    margin-right: 2px;
+}
+
+QTabBar::tab:selected {
+    background: rgba(0, 188, 212, 0.3);
+}
+
+QTabWidget::pane {
+    border: 1px solid rgba(77, 182, 172, 0.3);
+    border-radius: 6px;
+    padding: 4px;
+}
+
+/* ============= MINI BAR STYLES ============= */
+#miniBar {
+    background-color: transparent;
+}
+
+#miniBarContainer {
+    background-color: rgba(25, 25, 40, 0.95);
+    border: 1px solid rgba(77, 182, 172, 0.5);
+    border-radius: 8px;
+}
+
+#miniBar #messageInput {
+    background-color: rgba(30, 30, 45, 0.8);
+    border: 1px solid rgba(77, 182, 172, 0.4);
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 13px;
+    color: #e0f7fa;
+}
+
+#miniBar #messageInput:focus {
+    border: 1px solid #00bcd4;
+}
+
+/* ============= KEYBOARD NAVIGATION ============= */
+*:focus {
+    outline: none;
+}
+
+QPushButton:focus {
+    border: 2px solid #00bcd4 !important;
+}
+
+QLineEdit:focus {
+    border: 2px solid #00bcd4;
+}
+
+QTextEdit:focus {
+    border: 2px solid #00bcd4;
+}
+
+QComboBox:focus {
+    border: 2px solid #00bcd4;
+}
+
+/* Tab focus indicator for all interactive elements */
+QPushButton:focus:pressed {
+    border: 2px solid #4db6ac;
+}
+
+/* High-contrast friendly focus indicators */
+QAbstractItemView::item:focus {
+    background-color: rgba(0, 188, 212, 0.3);
+    border: 1px solid #00bcd4;
+}
+
+/* Make sure focus is visible on all themes */
+QPushButton::menu-indicator:focus {
+    border: 1px solid #00bcd4;
+}

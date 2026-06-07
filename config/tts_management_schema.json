@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EVA TTS Management Configuration Schema",
+  "description": "Configuration schema for EVA's intelligent TTS management system",
+  "type": "object",
+  "properties": {
+    "tts_management": {
+      "type": "object",
+      "description": "Intelligent TTS management settings",
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable delayed TTS preload system"
+        },
+        "preload_delay_seconds": {
+          "type": "integer",
+          "minimum": 300,
+          "maximum": 1800,
+          "default": 600,
+          "description": "Delay before TTS preload check (5-30 minutes)"
+        },
+        "unload_delay_seconds": {
+          "type": "integer",
+          "minimum": 600,
+          "maximum": 3600,
+          "default": 900,
+          "description": "Delay before TTS unload if unused (10-60 minutes)"
+        },
+        "cpu_idle_threshold": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50,
+          "default": 10,
+          "description": "CPU usage threshold for idle detection (1-50%)"
+        },
+        "ram_idle_threshold_mb": {
+          "type": "integer",
+          "minimum": 10,
+          "maximum": 200,
+          "default": 50,
+          "description": "RAM usage spike threshold for idle detection (10-200MB)"
+        },
+        "monitoring_interval_seconds": {
+          "type": "integer",
+          "minimum": 10,
+          "maximum": 120,
+          "default": 30,
+          "description": "System monitoring interval (10-120 seconds)"
+        }
+      },
+      "required": ["enabled"],
+      "additionalProperties": false
+    }
+  },
+  "examples": [
+    {
+      "tts_management": {
+        "enabled": true,
+        "preload_delay_seconds": 600,
+        "unload_delay_seconds": 900,
+        "cpu_idle_threshold": 10,
+        "ram_idle_threshold_mb": 50,
+        "monitoring_interval_seconds": 30
+      }
+    },
+    {
+      "tts_management": {
+        "enabled": false
+      }
+    },
+    {
+      "tts_management": {
+        "enabled": true,
+        "preload_delay_seconds": 300,
+        "unload_delay_seconds": 1200,
+        "cpu_idle_threshold": 5,
+        "ram_idle_threshold_mb": 25,
+        "monitoring_interval_seconds": 15
+      }
+    }
+  ]
+}

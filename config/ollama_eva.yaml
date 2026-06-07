@@ -1,0 +1,43 @@
+eva:
+  name: "EVA"
+  description: "EVA is your personal offline AI assistant"
+  version: "1.0.0"
+  language_matching: true
+  system_prompt: "You are EVA, a helpful AI assistant. You are running locally and offline. Always respond in the same language as the user's input. Be concise, helpful, and professional in your responses."
+
+models:
+  # directory: null  # EVA usa directorio estándar de Ollama (~/.ollama/models)
+  default_model: ""
+  keep_alive: "5m"
+  load_timeout: "5m"
+  context_length: 4096
+
+performance:
+  num_parallel: 1
+  max_loaded_models: 1
+  num_gpu: 1
+  num_thread: 0
+  use_mmap: true
+  gpu_overhead: 0
+
+inference:
+  temperature: 0.8
+  top_k: 40
+  top_p: 0.9
+  repeat_penalty: 1.1
+  num_predict: 512
+  enable_thinking: true
+  hide_thinking: false
+
+logging:
+  level: "info"
+  file: ""
+
+disabled_features:
+  - "server"
+  - "api"
+  - "telemetry"
+  - "updates"
+  - "registry"
+  - "auth"
+  - "multiuser"

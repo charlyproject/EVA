@@ -1,0 +1,86 @@
+MIT License
+
+Copyright (c) 2025 cHArLy
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+THIRD-PARTY COMPONENTS
+================================================================================
+
+This software incorporates components from third-party projects under their
+respective licenses. The binaries listed below are NOT included in this
+repository and must be downloaded separately (see requirements_extra.md).
+
+1. Vosk — Apache License 2.0
+   Copyright (c) Alpha Cephei Inc.
+   https://alphacephei.com/vosk/
+   Used for: Offline speech recognition (Spanish + English).
+
+2. Piper TTS — MIT License
+   Copyright (c) 2023 Michael Hansen
+   https://github.com/rhasspy/piper
+   Used for: Neural text-to-speech synthesis.
+
+3. FFmpeg — LGPL v2.1+
+   Copyright (c) FFmpeg developers
+   https://ffmpeg.org/
+   Used for: Audio processing and format conversion.
+
+4. Ollama — MIT License
+   Copyright (c) Ollama Team
+   https://github.com/ollama/ollama
+   Used for: Local AI model inference (not bundled; installed by the user).
+
+5. PySide6 — LGPL v3.0
+   Copyright (c) The Qt Company Ltd.
+   https://doc.qt.io/qtforpython/
+   Used for: Cross-platform GUI framework.
+
+6. PyAudio / PortAudio — MIT License
+   Used for: Audio I/O.
+
+================================================================================
+PRIVACY
+================================================================================
+
+EVA is designed with privacy as a core principle:
+- All speech recognition and TTS run locally on your device.
+- No audio, prompts, or personal data are sent to external servers.
+- Internet access is only used for optional web search commands (Tavily,
+  DuckDuckGo, Google) and to download AI models via Ollama.
+
+================================================================================
+DISCLAIMER
+================================================================================
+
+This software is provided for educational and productivity purposes. Users are
+responsible for compliance with local laws and regulations regarding voice
+recording, AI-generated content, and system automation.
+
+The author assumes no liability for misuse of this software or any damages
+resulting from its use.
+
+================================================================================
+VERSION INFORMATION
+================================================================================
+
+EVA Version: 1.0.0
+License: MIT
+Last Updated: 2025
